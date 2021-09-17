@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+
+/* Cabecalho */
+
+#conteiner {
+	margin: 0px auto;
+	width: 1200px;
+}
+
+header {
+	border:  1px solid darkred;
+	background-image: url("../imagens/fundo.png");
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 160px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	box-sizing: border-box;
+}
+
+
+nav {
+	width: 550px;
+}
+
+
+nav ul {
+	list-style-type: none;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #a76e13;
+}
+
+nav ul a:hover {
+	color: #FFF;
+	border-bottom: 1px solid #535858;
+}
+
+#imagem_maior img {
+	width: 850px;
+}
+
+#imagem_secundaria img {
+	width: 430px;
+	height: 383px;
+}
+
+/* Corpo */
+

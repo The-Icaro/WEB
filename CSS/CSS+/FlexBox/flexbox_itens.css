@@ -1,0 +1,50 @@
+/* Recomendado adicionar os prefixos para funcionamento nos browser */
+
+#conteudo {
+	height: 400px;
+	background-color: #DCDCDC;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+	background-color: #FFF;
+	border:  1px solid grey;
+	margin: 10px;
+	/*width: 200px;*/
+	height: 100px;
+
+	/* Tamanho inicial do flex antes da distribuicao do espaco restante */
+	flex-basis: 100px;
+
+}
+
+.logo {
+	/* Vai determinar qual dos elemento svai aparecer primeiro, seguindo  da esquerda para a direita */
+	order: 1;
+
+	/* Quanto esse elemeto vai crescer em relacao ao espaco total da div pai */
+	/*flex-grow: 1;*/
+
+	/* Quanto esse elemeto vai diminuir em relacao ao espaco total da tela */
+	flex-shrink: 4;
+
+}
+
+.navegacao {
+	order: 2;
+
+	/* Nesse caso a minha navegacao vai ficar o dobro do tamanho dos outros 2 elementos */
+	flex-grow: 2;
+
+	/* Nesse caso a quando tem mais elementos eles vao ser proporcional ao numero escolhido para cada elemento */
+	flex-shrink: 1;
+}
+
+.pesquisa {
+	order: 3;
+	/*flex-grow: 1;*/
+	flex-shrink: 7;
+}
+

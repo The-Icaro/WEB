@@ -1,0 +1,56 @@
+.arredondamento {
+	width: 300px;
+	height: 300px;
+	background-image:  url(imagens/perfil.jpg);
+	background-position: center;
+	padding: 15px;
+	border-radius: 150px;
+	margin: 20px auto;
+}
+
+.caixa {
+	margin: 20px;
+	padding: 20px;
+	width: 300px;
+	height: 200px;
+	background-color: #b9c941;
+	/* 4 valores, mesmo esquema do padding ou margin */
+	/* Para suporte dos browser mais antigos é necessário prefixos
+	-webkit- -> Chrome
+	-moz-  -> Fire Fox
+	-webkit- -> Safari*/
+	-webkit-border-radius: 10px 35px 80px 5px;
+	-moz-border-radius: 10px 35px 80px 5px;
+	border-radius: 10px 35px 80px 5px;
+}
+
+#comparacao_tamanho {
+	width: 800px;
+	margin: 60px auto;
+}
+
+
+.box_sizing {
+	width: 300px;
+	height: 300px;
+	/* Com o padding de 50 px, a caixa passa a ter 400px 
+	O que dificulta na montagem do layout */
+	padding: 50px;
+	float: left;
+	background-color: #b9c941;
+}
+
+.box_sizing2 {
+	width: 300px;
+	height: 300px;
+	/* Com o box-sizing a caixa se mantem com os valores definidos = 300x300 
+	Mesmo com a adicao do padding*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 50px;
+	float: right;
+	background-color: #b9c941;
+}
+
+

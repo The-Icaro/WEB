@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #E0E0E0;
+	font-family: "Tebuchet MS", Helvetica, sans-serif;
+}
+
+#conteiner {
+	background-color: #FFF;
+	width: 70%; /* 1000px -> 70% */
+	margin: 0px auto;
+	min-width: 850px;
+	max-width: 1280px;
+	/* min-height: ;
+	   max-height: ; */
+}
+
+
+#menu {
+	background: #225992 url(imgs/cabecalho2.jpg) center no-repeat;
+	font-weight: 700;
+	color: #FFF;
+	font-size: 1.5em;
+	height: 80px;
+	text-align: center;
+	padding-top: 40px;
+	min-width: ;
+}
+
+#conteudo {
+	width: 73%; /*730px -> 73*/
+	float: right;
+	padding-bottom: 50px;
+}
+
+#conteudo_primario {
+	float: left;
+	width: 65%; /*480px -> 65*/
+}
+
+#conteudo_primario h2 {
+	font-size: 1.2em;
+	text-align: center;
+	padding: 20px;
+}
+
+#conteudo_primario p {
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+#conteudo_secundario {
+	float: left;
+	width: 35%; /*250px -> 35*/
+	background-color: #D1D1D1;
+}
+
+#conteudo_secundario h3 {
+	font-size: 0.93em;
+	text-align: center;
+	padding: 20px;
+}
+
+#conteudo_secundario p {
+	font-size: 0.88em;
+	padding: 0px 20px 30px 20px;
+	color: #FFF;
+}
+
+
+#navegacao {
+	width: 25%; /* 250px -> 25 */
+	background-color: #D1D1D1;
+	float: left;
+}
+
+
+#navegacao ul {
+	list-style-type: none;
+	padding: 40px 35px 40px 35px;
+}
+
+#navegacao ul a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#navegacao ul a:hover {
+	text-decoration: underline;
+}
+
+
+
+#rotape {
+	clear: both;
+	background-color: #A8A8A8;
+	color: #FFF;
+	margin-top: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+img {
+	width: 90%;
+	padding: 2%;
+	max-width: 600px;
+}

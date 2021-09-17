@@ -1,0 +1,20 @@
+.conteudo {
+	background-color: blue;
+	margin: 15px;
+	border: 1px solid grey;
+	width: 200px;
+	height: 200px;
+	float: right;
+}
+
+.conteudo_1 {
+	background-color: red;
+	margin: 15px;
+	border: 1px solid grey;
+	width: 200px;
+	height: 200px;
+}
+
+.clear {
+	clear: both;
+}

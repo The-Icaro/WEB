@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport">
+	<title>Sobreposição de Elementos</title>
+	<style type="text/css">
+		
+	.conteudo1 {
+		background-color: red;
+		border: 1px solid darkred;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		/* z-index = O maior número saí em primeiro*/
+		z-index: 3;
+	}
+
+	.conteudo2 {
+		background-color: green;
+		border: 1px solid darkgreen;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 80px;
+		left: 80px;
+		z-index: 2;
+	}
+
+	.conteudo3 {
+		background-color: blue;
+		border: 1px solid darkblue;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 160px;
+		left: 160px;
+		z-index: 4;
+	}
+
+
+
+	</style>
+</head>
+<body>
+
+	<p class="conteudo1">Conteúdo 1</p>
+
+	<p class="conteudo2">Conteúdo 2</p>
+
+	<p class="conteudo3">Conteúdo 3</p>
+
+</body>
+</html>

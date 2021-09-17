@@ -1,0 +1,40 @@
+body {
+	background-color: #D2D2C1;
+	background-image: url(img/fundo.png);
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #4B566A;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#bordas {
+	width: 900px;
+}
+
+#menu_navegacao {
+	background-color: #C5C5B2;
+	padding: 18px;
+}
+
+#conteudo {
+	background-color: #E8E8D9;
+	padding: 10px;
+}
+
+.titulo {
+	color: #999988;
+	font-size: 1.2em;
+}
+
+.centro {
+	text-align: center;
+}
+
+.img_borda {
+	border: 10px solid #C3C3AE;
+}

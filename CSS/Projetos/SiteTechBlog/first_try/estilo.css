@@ -1,0 +1,81 @@
+body {
+	background-color: #e5e5e5;
+}
+
+#header {
+	background-color: orange;
+	margin: 0px;
+	height: 250px;
+	width: 100%;
+}
+
+.tec {
+	color: grey;
+	margin: 0px;
+	position: absolute;
+	top: 100px;
+	left: 675px;
+}
+
+.blog {
+	color: white;
+	margin: 0px;
+	position: absolute;
+	top: 100px;
+	left: 720px;
+}
+
+#links {
+	width: 400px;
+	position: absolute;
+	top: 200px;
+	left: 550px;
+}
+
+a {
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: white;
+}
+
+a:hover {
+	color: orange;
+	background-color: white;
+}
+
+.titulo_conteudo {
+	margin: 0px;
+	color: orange;
+}
+
+.conteudo_principal {
+	background-color: white;
+	padding: 20px;
+	margin: 15px 250px;
+	width: 640px;
+}
+
+.conteudo_lateral {
+	background-color: white;
+	width: 300px;
+	padding: 10px;
+	margin: 15px 0px;
+	position: relative;
+	bottom: 1230px;
+	left: 950px;
+}
+
+.titulo_lateral {
+	margin: 0px;
+	padding: 5px;
+	background-color: lightgrey;
+	color: black;
+}
+
+.display_bloco {
+	display: block;
+	color: orange;
+}

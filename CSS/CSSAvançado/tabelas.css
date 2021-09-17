@@ -1,0 +1,31 @@
+table {
+	width: 600px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border-collapse: collapse; /*collapse = junta as bordas; sepparate = bordas separadas */
+}
+
+th, td  {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+}
+
+.row_cinza {
+	background-color: #efefef;
+}
+
+
+.numero_direita {
+	text-align: right;
+}
+
+tr:hover {
+	background-color: #c3e6e5;
+}

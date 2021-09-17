@@ -1,0 +1,23 @@
+#principal {
+}
+
+
+.titulo{
+	text-align: center;
+	padding: 0px;
+}
+
+
+.anuncio {
+	background-color: #e5e5e5;
+	border: 1px solid darkgrey;
+	padding: 8px;
+	height: 350px;
+	width: 475px;
+	margin: 5px;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}

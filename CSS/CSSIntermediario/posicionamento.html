@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport">
+	<title>Posicionamento - Static, Relative, Absolute e Fixed</title>
+	<style type="text/css">
+		
+	#conteiner {
+		background-color: lightgrey;
+		border: 1px solid darkgrey;
+		padding: 7px;
+		margin: 10px auto;
+		width: 800px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	hr {
+		width: 800px;
+	}
+
+	.conteudo {
+		width: 350px;
+	}
+
+	.relative {
+		/* Alinhamento Baseado na sua posição Original */
+		/* static (padrao), relative, absolute e fixed */
+		position: relative;
+		/* Relative acompanha top, left, right e bottom */
+		top: -95px;
+		left: 400px;
+	}
+
+	.absolute {
+		background-color: lightgrey;
+		border: 1px solid darkgrey;;
+		width: 275px;
+		margin: 0px;
+		/* Saí do fluxo padrão dos blocos e tem alinhamento com um conteiner que também tenha position */
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	.fixed {
+		background-color: lightgrey;
+		border: 1px solid darkgrey;;
+		width: 275px;
+		margin: 0px;
+		/* Alinnhamento com base na tela fixa, ele não acompanha a rolagem da tela */
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="conteiner">
+		
+		<h2>
+			Lorem ipsum dolor sit amet consectetur adipiscing elit.
+		</h2>
+
+		<div class="conteudo">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p class="relative">
+				<strong>Posicionamento Relative</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<hr>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p class="absolute">
+				<strong>Posicionamento Absolute</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<hr>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p class="fixed">
+				<strong>Posicionamento Fixed</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Phasellus accumsan, justo eget luctus fermentum, nunc mauris euismod justo, 
+				sed dictum ante dolor vestibulum nibh.
+			</p>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

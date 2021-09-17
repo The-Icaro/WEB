@@ -1,0 +1,45 @@
+/* Recomendado adicionar os prefixos para funcionamento nos browser */
+
+#conteudo {
+	height: 400px;
+	background-color: #DCDCDC;
+	display: flex;
+
+	/* Direcao dos elementos
+	row => em linha, ou seja um ao lado do outro até dar o tamanho
+	row-reverse => o mesmo conceito só que alinhado a direita e começando do ultimo ao primeiro 
+	column => distribuicao em coluna, um embaixo do outro
+	column-reverse => mesmo conceito, só que comecando do ultimo ao primeiro*/
+	flex-direction: row;
+
+	/* Vai ditar se ao encurtar a tela, os elementos vão quebrar ou diminuir 
+	nowrap => ao encurtar os elementos vao encolher
+	wrap => vai quebrar quando a tela encolher
+	wrap-reverse => quebra e ao contrario, ou seja do ultimo para o primeiro*/
+	flex-wrap: nowrap;
+
+	/* Alinhamento e Espacamento entre os elementos sempre comecando a partir de cima
+	flex-start =>  alinhamento ao comeco da div pai, espacamento padrao entre os elementos
+	flex-end => alinhamento a direita da div pai, espacamento padrao entre os elementos
+	center => alinhamento ao centro da div pai, espacamento padrao entre os elementos
+	space-between => alinha proporcionalmente ao tamanho da div pai com a quantidade de elementos
+	space-around => alinha com a mesma "margin" todos os elementos*/
+	justify-content: space-between;
+
+
+	/* Alinhamento e Espacamento dos elementos agora com relacao a div pai
+	stretch => vai  alongar o elemento ate o final (heigth) da div pai
+	center => alinha os elementos exatamento ao centro, tando vertical quanto horizontal
+	flex-start => os alinha no canto superior da div pai
+	flex-end => os alinha no canto inferior da div pai
+	baseline => alinhamento conforme o texto dos elementos*/
+	align-items: center;
+}
+
+.item {
+	background-color: #FFF;
+	border:  1px solid grey;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+}	

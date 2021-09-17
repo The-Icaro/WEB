@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+.clear {
+	clear: both;
+}
+
+
+ul {
+	list-style-type: none;
+	width: 588px;
+	margin: 50px auto;
+	background-image: url(imgs/fundo-horizontal.png);
+	background-repeat: repeat-x;
+}
+
+
+ul a {
+	line-height: 40px;
+	padding: 0 2.2em;
+	float: left;
+	background-image: url(imgs/divisor.png);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+
+ul .excluir_primeiro a {
+	background-image: none;
+}
+
+ul a:link, a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+
+li a:hover {
+	color: #085662;
+	background-color: #44cade;
+}

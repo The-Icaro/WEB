@@ -1,0 +1,148 @@
+/* Clear Padrões */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Estilos Cabeçalho */
+
+#cabecalho {
+	background-color: #f7b600;
+	text-align: center;
+	padding: 15px;
+}
+
+#logo_titulo {
+	padding: 10px;
+	color: #4e4e4e;
+	font-size: 1.5em;
+}
+
+.branco {
+	color: #FFF;
+}
+
+#links_cabecalho {
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	padding: 8px 12px;
+}
+
+#cabecalho a:link, #cabecalho a:visited {
+	color: #FFF;
+}
+
+#cabecalho a:hover {
+	color: #f7b600;
+	background-color: #FFF;
+}
+
+/* Estilos Principal */
+
+#principal {
+	width: 920px;
+	margin: 15px auto 0px auto;
+}
+
+
+#area_postagens {
+	width: 660px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.postagens {
+	background-color: #FFF;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color:  #f7b600;
+	font-size: 1.2em;
+}
+
+
+.data_postagens {
+	font-size: 0.8em;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.texto_postagens {
+	padding: 5px 0px;
+	margin: 10px 0px;
+}
+
+#principal a:link , a:visited {
+	color: #f7b600;
+}
+
+#principal a:hover {
+	text-decoration: underline;
+}
+
+
+#rotape {
+	background-color: #CCC;
+	text-align: center;
+	padding: 15px;
+	clear: both;
+}
+
+/* Estilos Area Lateral */
+
+#area_lateral {
+	width: 240px;
+	float: right;
+}
+
+.postagens_lateral {
+	background-color: #FFF;
+	margin-bottom: 20px;
+}
+
+h3 {
+	padding: 10px;
+	background-color: #CCC;
+	color: #4e4e4e;
+}
+
+
+.texto_lateral {
+	font-size: 0.9em;
+	padding: 5px;
+	margin: 0px 10px;
+}
+
+hr {
+	width: 220px;
+	margin: 0px auto;
+}
+
+#area_lateral a {
+	display: block;
+	font-size: 1em;
+	margin: 0px 5px
+}
+
+#links_laterais {
+	padding: 5px 0px 10px 0px;
+}
+
+#links_laterais a {
+	font-size: 1.1em;
+	padding: 0px 10px;
+	margin: 0px;
+}

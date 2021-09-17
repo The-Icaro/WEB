@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	width: 100px;
+	height: 40px;
+
+	display: block;
+
+	text-decoration: none;
+	color: black;
+
+	text-indent: 20px;
+	line-height: 40px;
+
+	background-color: orange;
+}
+
+a:hover {
+	background-color: orangered;
+	color: #FFF;
+}
+
+#home #navegacao_lateral .home a,
+#sobre #navegacao_lateral .sobre a,
+#servicos #navegacao_lateral .servicos a {
+	background-color: orangered;
+	color: #FFF;
+}

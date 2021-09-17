@@ -1,0 +1,19 @@
+#caixa {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+}
+
+#caixa:hover {
+	width: 400px;
+	height: 300px;
+	background-color: lightgrey;
+
+	/* Recomendado adicionar os prefixos -webkit-, -o-, -moz- no transition */
+	/* Deve se especificar 2 coisas
+	Qual a Propriedade
+	A duracao do efeito */
+	transition: all 3s;
+	transition-timing-function: ease-in-out;
+}
+
