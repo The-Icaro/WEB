@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Novas Tags de Input</title>
+</head>
+<body>
+
+	<form>
+		
+		<!-- Atributos Complemento
+			required ou required="required" = o browser não deixa enviar sem completar
+			autofocus ou autofocus="autofocus" = poe uma borda nesse elemento para focar 
+			placeholder = texto que fica no input, mais pra orientacao
+
+			Para Number
+			min = minimo valor requerido
+			max = valor maximo do input
+			step = gap de valores
+
+			Para Range
+			min = minimo de pontos para se deslocar
+			max = maximo de pontos para se deslocar distribuidos na reta
+			value = onde a bolinha vai comecar--> 
+
+		<!-- Nome -->
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" id="nomeUser" required autofocus>
+		<br><br>
+
+		<!-- Email -->
+		<label for="email">Email</label>
+		<input type="email" name="email" id="emailUser" required>
+		<br><br>
+
+		<!-- Numero -->
+		<label for="numero">Numero - Idade</label>
+		<input type="number" name="numero" id="numeroUser" min="18" max="120" step="5">
+		<br><br>
+
+		<!-- Url -->
+		<label for="url">Url - Github</label>
+		<input type="url" name="url" id="urlUser" placeholder="http://www......">
+		<br><br>
+
+		<!-- Pesquisa-->
+		<label for="pesquisa">Pesquisa</label>
+		<input type="search" name="pesquisa" id="pesquisa">
+		<br><br>
+
+		<!-- Range-->
+		<label for="range">Range</label>
+		<input type="range" name="range" id="rangeUser" min="1" max="5" value="3">
+		<br><br>
+
+		<!-- Date-->
+		<label for="data">Data</label>
+		<input type="date" name="data" id="dataUser">
+		<br><br>
+
+		<!-- Color -->
+		<label for="cor">Cor</label>
+		<input type="color" name="cor" id="colorUser">
+		<br><br>
+
+		<input type="submit" name="" value="Submit">
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+</head>
+<body>
+    <a href="">Home</a>
+    /
+    <a href="contato.html"> Página de Contato</a>  <!-- href = link, para links externos colocar tudo; http://.... -->
+    <!-- Caso o href que queira não esteja no mesmo local, basta colocar o PATH -->
+    <h2>Home</h2>
+    <hr>
+    <p>Donec tempus varius tortor a volutpat.
+        Nam quis lacus leo. Curabitur in vehicula felis, vel luctus justo.
+        Pellentesque sed risus vel ante iaculis rutrum.
+        Integer rutrum scelerisque ex, at pellentesque nisi varius sit amet.
+        Mauris eros diam, sagittis ultricies mi eget, iaculis fringilla nunc.</p>
+    <hr>
+    <h3>Tabela de Produtos</h3>
+    <table border="1" width="400">  <!-- table = tabela, border = pixels de grossura da borda, width = pixels ou porcentagem da tela -->
+
+        <tr>  <!-- table row = linha da tabela -->
+            <th>REF</th>  <!-- th = table header = cabeçalho da tabela -->
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>001</td> <!-- table data = dados da tabela -->
+            <td>Notebook</td>
+            <td>15.999,99</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Celular</td>
+            <td>1.999,99</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Televisão</td>
+            <td>5.499,99</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Desconto</th>
+            <td colspan="2">CUPOM1 = R$15</td>
+        </tr>
+        <tr>
+            <td colspan="2">CUPOM2 = R$10</td>
+        </tr>
+        <tr>
+            <th>Valor Total</th>
+            <td colspan="2">R$ 3.478,99</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Login</h1>
+    <form action="">  <!-- action = vai levar as info do formulario ate o backend -->
+        <strong>User:</strong><br>
+        <input type="text" name="login_box"><br>  <!-- type = tipo do input -->
+        <strong>Senha:</strong><br>
+        <input type="password" name="senha_box"><br>  <!-- name = nome de localização para o backend -->
+        <br><input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h1>Cadastro</h1>
+    <form>
+        <strong>Nome:</strong><br>
+        <input type="text" name="nome_cadastro"><br>
+
+        <br><strong>Data de Nascimento:</strong><br>
+        <input type="date" name="data_cadastro"><br>
+
+        <br><strong>Interesses</strong><br>
+        <input type="checkbox" name="interesses">Esportes<br>
+        <input type="checkbox" name="interesses">Moda<br>
+        <input type="checkbox" name="interesses">Arte<br>
+        <input type="checkbox" name="interesses">Tecnologia<br>
+
+        <br><strong>Sexo:</strong><br>
+        <input type="radio" name="radio_sexo" value="M">Masculino<input type="radio" name="radio_sexo" value="F">Feminino<br>
+
+        <br><strong>Estado:</strong>
+        <select name="Estado">
+            <option value="sp">SP</option>
+            <option value="mg">MG</option>
+            <option value="rj">RJ</option>
+            <option value="rs">RS</option>
+        </select><br>
+
+        <br><strong>Email:</strong><br>
+        <input type="email" name="email_cadastro"><br>
+
+        <br><strong>Senha:</strong><br>
+        <input type="password" name="senha_cadastro"><br>
+
+        <br><strong>Obs:</strong><br>
+        <textarea></textarea><br>
+
+        <br><input type="submit" value="Enviar">
+        <hr>
+        <h2>Caracteres Especiais</h2>
+        HTML Entities - https://www.w3schools.com/html/html_entities.asp
+
+    </form>
+
+
+</body>
+</html>
