@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<title>Divs e Spans</title>
+	<style type="text/css">
+
+		.produto {
+			background: grey;
+		}
+
+		#id_produtos {
+			background: darkgrey;
+		}
+
+
+	</style>
+</head>
+<!--  span = funcionamente inline, na linha,
+ou seja, agruamento por linha, um ao lado o outro-->
+<!-- duv = ocupa 100% da página, width, agrupamento um embaixo do outro-->
+<body>
+	<p>Esta tag span é <span style="color:blue;"> Azul </span>
+	e esta é <span style="color:red;"> Vermelha </span>
+	</p>
+	<hr>
+	<div style="color:green;">
+		<h3>Título Div</h3>
+		<p>Donec tempus varius tortor a volutpat.
+        Nam quis lacus leo. Curabitur in vehicula felis, vel luctus justo.
+        Pellentesque sed risus vel ante iaculis rutrum.
+        Integer rutrum scelerisque ex, at pellentesque nisi varius sit amet.
+        Mauris eros diam, sagittis ultricies mi eget, iaculis fringilla nunc.
+    	</p>
+	</div>
+	<hr>
+	<div style="color:purple;">
+		<h3>Título Div</h3>
+		<p>Donec tempus varius tortor a volutpat.
+        Nam quis lacus leo. Curabitur in vehicula felis, vel luctus justo.
+        Pellentesque sed risus vel ante iaculis rutrum.
+        Integer rutrum scelerisque ex, at pellentesque nisi varius sit amet.
+        Mauris eros diam, sagittis ultricies mi eget, iaculis fringilla nunc.
+    	</p>
+	</div>
+	<div id="id_produtos"> <!-- agrupamento de elementos da div -->
+		<h2 class="produto">Produtos</h2>
+		<hr>
+		<div>
+			<span class="produto">Produto1</span>
+			<span class="produto">Produto2</span>
+			<span class="produto">Produto3</span>
+			<span class="produto">Produto4</span>
+			<span class="produto">Produto5</span>
+			<span class="produto">Produto6</span>
+			<span class="produto">Produto7</span>
+			<span class="produto">Produto8</span>
+		</div>
+	</div>
+</body>
+</html>
