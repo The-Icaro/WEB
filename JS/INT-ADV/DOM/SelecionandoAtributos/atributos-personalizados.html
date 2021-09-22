@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando elementos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<!-- quantidade nao e um atributo padrao -->
+	<span id="itens" quantidade="2" data-status="pendente">
+		2 itens no carrinho
+	</span>
+
+	<!-- data-x e uma convencao para nomes de atributos personalizados -->
+
+	<ul id="lista">
+		<li codigo="001">Jamilton</li>
+		<li codigo="002">Ana</li>
+	</ul>
+
+	<!-- For , elemetno a parte -->
+	<label id="labelNome" for="nome">Nome</label>
+	<input type="text" id="nome" name="nome" />
+
+	<script type="text/javascript">
+		
+		// Atributos Personalizados
+		// getAttribute('x')
+
+		const obj = document.getElementById('itens')
+		console.log(obj.id)
+		console.log(obj.quantidade) // Undefined 
+		console.log(obj.getAttribute('quantidade')) 
+
+		console.log("")
+
+		// Set
+		obj.setAttribute('quantidade', '10')
+		console.log(obj.getAttribute('quantidade'))
+
+		console.log("")
+
+		// Busacndo o Atributo com o nome convencao
+		console.log(obj.dataset.status)
+		console.log(obj.getAttribute('data-status'))
+		console.log(obj.hasAttribute('data-status'))
+
+		console.log("")
+
+		// Set
+		obj.dataset.status = "finalizado"
+		console.log(obj.dataset.status)
+
+		// Removendo Atributo
+		obj.removeAttribute('data-status')
+		console.log(obj)
+
+		console.log("")
+
+		// Outra Maneira de Acessar os Atributos
+		console.log(obj.attributes[0]) //id
+		console.log(obj.attributes.quantidade) //quantidade
+		console.log(obj.attributes['data-status']) //data-status -> undefined pq Removi em cima
+
+		console.log("")
+
+		const obj2 = document.getElementById('for')
+		console.log(obj.getAttribute('for'))
+		console.log(obj2) // Null, pois o FOR e uma palavra nativa do JS
+
+
+		console.log("")
+
+		const obj3 = document.querySelector('#labelNome')
+		console.log(obj3.htmlFor) // Agora consegue se acessar o atributo
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

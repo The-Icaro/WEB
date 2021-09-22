@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecionando Elementos Individuais</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<div id="destaque">Área de Destaque</div>
+
+	<h1 class="vermelho">Título do Site</h1>
+	<p>Subtitulo</p>
+
+	<ul>
+		<li class="primeiro">Item 1</li>
+		<li>Item 2</li>
+	</ul>
+
+	<script type="text/javascript">
+		
+		/** Selecionando Elementos
+		 * 1 forma -> getElementById()
+		 * 2 forma -> querySelector()
+		 * */
+
+		 // 1 Forma
+
+		 const obj_1 = document.getElementById("destaque")
+		 console.log(obj_1)
+		 console.log(typeof obj_1)
+		 console.log(obj_1.textContent)
+
+		 console.log('----')
+
+		 // 2 Forma
+		 const obj_2 = document.querySelector(".primeiro")
+		 console.log(obj_2)
+		 console.log(typeof obj_2)
+		 console.log(obj_2.textContent)
+
+
+	</script>
+
+</body>
+</html>

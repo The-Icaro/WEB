@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecionando Elementos Individuais</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<div id="destaque">Área de Destaque</div>
+
+	<h1 class="vermelho">Título do Site</h1>
+	<p>Subtitulo</p>
+
+	<ul>
+		<li class="primeiro">Item 1</li>
+		<li>Item 2</li>
+	</ul>
+
+	<button onclick='mudarLi()'>Clique Aqui</button>
+
+
+	<!-- Desafio, com o clique do botão, alterar o li -> Item 1 para Teste -->
+	<script type="text/javascript">
+		
+		function mudarLi(){
+			const li = document.querySelector(".primeiro")
+			li.innerHTML = "Teste"
+		}
+
+	</script>
+
+</body>
+</html>

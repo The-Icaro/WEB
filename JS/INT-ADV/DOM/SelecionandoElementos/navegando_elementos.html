@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Navegando Pelos Elementos</title>
+</head>
+<body>
+
+	<div>Primeiro Irmao</div>
+
+	<div id="conteudo">
+		<p>Primeiro Elemento</p>
+		<p>Segundo Elemento</p>
+		<p>Terceiro Elemento</p>
+	</div>
+
+	<div>Proximo Irmao</div>
+
+	<script type="text/javascript">
+		
+		//Navegando Pelos Elementos
+		const obj = document.querySelector("#conteudo")
+
+		console.log(obj)
+		console.log("")
+
+		// Elementos Filhos
+		console.log("Elementos Filhos")
+		console.log(obj.children)
+
+		console.log("")
+
+		console.log("Primeiro Filho")
+		console.log(obj.firstElementChild)
+
+		console.log("")
+
+		console.log("Ultimo Filho")
+		console.log(obj.lastElementChild)
+
+		console.log("")
+
+		// Elemento Pai
+		console.log("Elemento Pai")
+		console.log(obj.parentElement)
+
+		console.log("")
+
+		// Elementos Irmaos
+		console.log("Elementos Irmaos")
+
+		console.log("	Irmao Anterior")
+		console.log(obj.previousElementSibling)
+		console.log("")
+
+		console.log("	Irmao Posterior/Proximo")
+		console.log(obj.nextElementSibling)
+
+
+
+	</script>
+
+</body>
+</html>

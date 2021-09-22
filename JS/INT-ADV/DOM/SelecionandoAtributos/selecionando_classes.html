@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecionando Classes</title>
+	<link rel="stylesheet" type="text/css" href="selecionando_classes.css">
+</head>
+<body>
+	<h1 class="x">Lorem Ispum</h1><br>
+	<button onclick="alterarClasses()">Clique Aqui</button>
+
+	<script type="text/javascript">
+		
+		const obj = document.querySelector('h1')
+
+		// Mostrando as classes do obj
+		const classes = obj.classList
+		console.log(classes) // Retorna um DOMToken com o length e os valores
+		console.log(classes[0]) // Exibe direto o nome da classe
+		console.log(classes.length)
+
+		console.log("")
+
+		// Verificar se o elemento/obj tem determinada classe
+		console.log(classes.contains('x')) // retorno booleano
+
+		// Modificando as Classes
+		// Adicionar uma classe, sem substituir a que estava
+		classes.add('y')
+
+		// Remover uma classe
+		classes.remove('x')
+
+		// Substituir classe
+		// obj.className = "z" // Substituo todas as que estavam
+
+		// Alterar entre classes
+		function alterarClasses(){
+			const obj2 = document.querySelector('h1')
+			const classes2 = obj2.classList
+			classes2.toggle("z")
+		}
+
+	</script>
+
+</body>
+</html>

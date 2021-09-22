@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecionando Atributos</title>
+</head>
+<body>
+
+	<img id="imagem" src="img/celular.png" width="400px"><br>
+	<button onclick="changeImg()">Clique Aqui</button>
+
+	<script type="text/javascript">
+		
+		// Capturando um Atributo
+		const img = document.querySelector("#imagem")
+
+
+		/** Maneiras de Capturar
+		 * x.getAttribute(y)
+		 * x['y']
+		 * x.y
+		 * */
+		let src = img.getAttribute('src')
+		let src2 = img['src']
+		let src3 = img.src
+		console.log(src)
+		console.log(src2)
+		console.log(src3)
+
+		function changeImg(){
+			const newPath = 'img/grafico.png'
+			img.src = newPath
+		}
+
+
+
+	</script>
+
+</body>
+</html>

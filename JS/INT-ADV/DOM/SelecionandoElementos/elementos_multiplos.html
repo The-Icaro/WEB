@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecionando Elementos Múltiplos</title>
+</head>
+<body>
+	<ul>
+		<li>Item 1</li>
+		<li class="itens">Item 2</li>
+		<li>Item 3</li>
+		<li class="itens">Item 4</li>
+	</ul>
+
+	<input type="text" name="nome">
+
+	<script type="text/javascript">
+		
+		/** Selecionando Múltiplos Elementos
+		 * 
+		 * getElementsByTagName()
+		 * getElementsByClassName()
+		 * getElementsByName()
+		 * querySelectorAll()
+		 * */
+
+		 //getElementsByTagName
+		 console.log("getElementsByTagName")
+		 const colecao = document.getElementsByTagName("li")
+		 console.log(colecao)
+		 console.log(colecao[0])
+		 console.log(colecao[3].textContent)
+
+		 console.log("")
+
+		 	// Display de Todos
+		 for(let i = 0; i < colecao.length; i++){
+		 	console.log(colecao[i].textContent)
+		 }
+
+		 console.log("")
+
+		 console.log("Convertendo para um Array")
+		 	// Converter para um Array
+		 const arrayColecaoLi = Array.from(colecao)
+		 console.log(arrayColecaoLi)
+
+		 console.log("")
+
+		 //getElementByClassName
+		 console.log("getElementByClassName")
+		 const colecao2 = document.getElementsByClassName("itens")
+		 console.log(colecao2)
+		 console.log(colecao2[0].textContent)
+
+		 console.log("")
+
+		 //getElementByName -> mais utilizados em formularios, ou em tags HTML que tenham a propriedade name
+		 console.log("getElementByName")
+		 const colecao3 = document.getElementsByName("nome")
+		 console.log(colecao3) // NodeList -> é posivel utilizar um forEach sem ter q converter para Array
+
+		 console.log("")
+
+		 //querySelectorAll
+		 console.log("querySelectorAll")
+		 const colecao4 = document.querySelectorAll(".itens")
+		 console.log(colecao4) // Também Retorna um NodeList
+
+		 // Outro meio de selecionar objetos dos elementos
+		 console.log(colecao4.item(0).textContent)
+		 console.log(colecao4.item(1).textContent)
+
+	</script>
+</body>
+</html>
